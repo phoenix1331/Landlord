@@ -14,14 +14,17 @@
             "email": "calebfidecaro@gmail.com"
         }
     ],
-    "require": {
-        "php": "^7.2.5"
-    },
-    "require-dev": {
-        "mockery/mockery": "^1.3.1",
-        "phpunit/phpunit": "^8.5",
-        "laravel/framework": "^7.0"
-    },
+  "require": {
+    "php": ">=7.2",
+    "illuminate/support": "5.4.*|5.5.*|5.6.*|6.*.*|7.*.*",
+    "illuminate/database": "~5.6.34|~5.7.0|~5.8.0|^6.0|^7.0"
+  },
+  "require-dev": {
+    "mockery/mockery": "~0.9|~1.0",
+    "phpunit/phpunit": "5.5.*|6.0.*|7.0.*",
+    "laravel/framework": "5.4.*|5.5.*|5.6.*|6.*.*|7.*.*",
+    "orchestra/testbench": "~3.6.0|~3.7.0|~3.8.0|^4.0"
+  },
     "autoload": {
         "psr-4": {
             "HipsterJazzbo\\Landlord\\": "src/"
