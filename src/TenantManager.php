@@ -149,8 +149,7 @@ class TenantManager
                 if ($this->getTenants()->first() && $this->getTenants()->first() != $id) {
                     $id = $this->getTenants()->first();
                 }
-
-                $builder->where($model->getQualifiedTenant($tenant), '=', $id);
+                $builder->whereIn($model->getQualifiedTenant($tenant), $id);
             });
         });
     }
